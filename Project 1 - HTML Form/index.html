@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 - HTML Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" class="form">
+            <h2>Sign Up</h2>
+            <div class="form-control">
+                <label for="username" id="username_label">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter Username">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="email" id="email_label">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter email id">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password" id="password_label">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password2" id="password2_label">Confirm Password</label>
+                <input type="password2" id="password2" name="password2" placeholder="Enter Password again for confirmation">
+                <small>Error message</small>
+            </div>
+            <button>Submit</button>
+        </form>
+        
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
