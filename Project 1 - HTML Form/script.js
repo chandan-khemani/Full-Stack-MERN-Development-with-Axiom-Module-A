@@ -61,6 +61,14 @@ function checkPasswordMatch(p, p2){
     return false;
 }
 
+function validateEmail(email){
+    var re = /\S+@\S+\.\S+/;
+    if (email.value.length >= 5 && email.value.length <= 20) {
+    if (!re.test(email.value)) {
+        showError(email, 'Invalid Email ID');
+    } 
+}
+}   
 
 function ucFirstLetter(string) 
 {
@@ -90,6 +98,7 @@ form_element.addEventListener('submit', function(e){
     //checks whether username length is valid or not
     checkLength(email, 5, 30);
 
+    validateEmail(email);
     //checks whether username length is valid or not
     checkLength(password, 5, 12);     
     
