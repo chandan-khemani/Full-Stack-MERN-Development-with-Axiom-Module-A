@@ -27,7 +27,7 @@ body{
 }
 
 form{
-    padding: 20px 40px;
+    padding: 10px 30px;
     margin-bottom: 10px;
 }
 form h2{
@@ -36,7 +36,7 @@ form h2{
 
 .form-control{
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .form-control label{
     color: rgb(49, 49, 49);
@@ -61,7 +61,7 @@ form h2{
 
 
 .form-control small{
-    font-size: 14px;
+    font-size: 12px;
     visibility: hidden;
 
 }
