@@ -22,16 +22,15 @@ body{
 .container{
     background-color: white;
     width: 400px;
-    box-shadow: 10px 10px 5px #ff6363;
-   
+    border-radius: 5px;   
 
 }
 
-.form{
+form{
     padding: 20px 40px;
     margin-bottom: 10px;
 }
-.form h2{
+form h2{
     text-align: center;
 }
 
@@ -60,18 +59,33 @@ body{
     border-color: rgb(83, 83, 83);
 }
 
+
 .form-control small{
     font-size: 14px;
-    color:orangered;
+    visibility: hidden;
+
 }
 
-.form button{
+.form-control.error small{
+    visibility: visible;
+    color: red;
+}
+.form-control.success input{
+    border-color: green;
+    background-color: rgb(212, 248, 212);
+}
+.form-control.error input{
+    border-color: orangered;
+    background-color: rgb(255, 241, 236);
+}
+form button{
     border:none;
     background-color: rgb(64, 77, 255);
     color: white;
-    padding: 12px;
+    padding: 15px;
     width: 100%;
     border-radius: 3px;
     cursor: pointer;
     font-size: 15px;
 }
+

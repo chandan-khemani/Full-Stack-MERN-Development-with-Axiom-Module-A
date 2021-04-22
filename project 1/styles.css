@@ -75,10 +75,7 @@ h2{
     font-size: 12px;
 }
 
-.form-control.error small{
-    visibility: visible;
-    color: var(--error-color);
-}
+
 
 .form button{
     background-color: blue;
