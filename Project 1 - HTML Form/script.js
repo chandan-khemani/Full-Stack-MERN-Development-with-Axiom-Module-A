@@ -1,3 +1,4 @@
+// Retrieving element objects from html page
 const form_element=document.getElementById('signup-form');
 const username=document.getElementById('username');
 const email=document.getElementById('email');
@@ -18,13 +19,12 @@ function showSuccess(input_element) {
     const formcontrol_element= input_element.parentElement;
     formcontrol_element.className='form-control success';
 
-    // return false;
+    return false;
 }
 
-
+// Function to check whether input field is blank or not
 function checkRequired(el){
     const input_name=ucFirstLetter(el.attributes.item(2).value);
-    // console.log(input_name);
 
    if (el.value ==="") {
        if (input_name !== 'Password2') {
@@ -40,6 +40,7 @@ function checkRequired(el){
     return false;
 }
 
+// fucntion to check length of input field values
 function checkLength(el, min, max){
     const input_name=ucFirstLetter(el.attributes.item(2).value);
     if (el.value.length > 0 && (el.value.length < min || el.value.length > max)) {
@@ -49,14 +50,12 @@ function checkLength(el, min, max){
     return false;
 }
 
+// function to check matching of confirm password field input
 function checkPasswordMatch(p, p2){
-
-
         if (p2.value.length >= 5 && p2.value.length <= 12) {
             if(p.value !== p2.value){
                 showError(p2, 'Confirm Password don\'t match');
             }           
-
         }
 
     return false;
