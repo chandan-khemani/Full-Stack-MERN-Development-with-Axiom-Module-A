@@ -47,6 +47,7 @@ function checkLength(el, min, max){
         showError(el, input_name + ' must be '+ min + '-' + max);
 
     } 
+    
     return false;
 }
 
