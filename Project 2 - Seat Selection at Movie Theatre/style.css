@@ -7,18 +7,117 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(209, 209, 209);
+    background-color: slategray;
+    color: white;
+    
+    /* Align all items of page to center of browswer screen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     margin: 0;
 }
 
+.movie-container{
+    margin: 20px 0;
+}
 
+.movie-container h2{
+    text-align: center;
+    ;
+}
 
-.container{
-   
-    border-radius: 3px;   
+.movie-container select{
+    background-color: white;
+    border: 0;
+    border-radius: 2px;
+    font-size: 14px;
+    margin-left: 5px;
+    padding: 5px 15px 5px 15px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.seat{
+    background-color: rgb(161, 161, 161);
+    width: 15px;
+    height: 12px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 
 }
 
-.container h2{
-    text-align: center;
+.row{
+    display: flex;
+}
+
+.seat:nth-of-type(2){
+margin-right: 20px;
+}
+
+.seat:nth-last-of-type(2){
+    margin-left: 20px;
+}
+.seat.selected{
+    background-color: aqua;
+}
+.seat.occupied{
+    background-color: white;
+}
+.seat:not(.occupied):hover{
+    background-color: yellow;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+.legend{
+    /* background-color: rgb(109, 109, 109); */
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: lightgray;
+    list-style: none;
+    display: flex;
+    /* margin-right: 20px; */
+    justify-content: space-between;
+}
+
+.legend li{
+    display: flex;
+    margin: 0 10px;
+    align-items: center;
+    justify-content: center;
+}
+.legend .seat:not(.occupied):hover{
+    cursor: none;
+    transform: scale(1);
+
+}
+
+
+.screen{
+    height: 80px; width: 100%;
+    background-color: white;
+
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+
+    box-shadow: 0 3px 10px white;
+    
+}
+
+
+
+div.container{
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+p.text span{
+    color: rgb(52, 255, 255);
+    /* padding: 5px 10px; */
 }
